@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dados de Entrega</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@275&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap" />
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    /* Reset de margens e padding padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS para o corpo do documento */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #030202;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff;
+    }
+
+    /* Container principal */
+    .container {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%; /* Largura máxima ajustada */
+      max-width: 600px; /* Largura máxima definida para evitar que o conteúdo se estenda demais */
+    }
+
+    /* Título do site */
+    .e-sport {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3rem; /* Tamanho do título ajustado */
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    /* Formulário dentro do container */
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Título do formulário */
+    .form-container h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem; /* Tamanho do título ajustado */
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    /* Rótulo para campos de entrada */
+    .form-container label {
+      display: block;
+      font-weight: bold;
+      font-size: 1.5rem; /* Tamanho do rótulo ajustado */
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    /* Entrada de texto e seleção */
+    .form-container input[type="text"],
+    .form-container select {
+      width: 100%;
+      padding: 1rem; /* Preenchimento ajustado */
+      margin-bottom: 1.5rem; /* Margem inferior ajustada */
+      border: none;
+      border-radius: 30px;
+      background-color: #ccc;
+      font-size: 1.5rem; /* Tamanho da fonte ajustado */
+      text-align: center;
+    }
+
+    /* Placeholder para campos de entrada */
+    .form-container input[type="text"]::placeholder {
+      color: #777;
+    }
+
+    /* Layout flexível para itens em linha */
+    .flex-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem; /* Margem inferior ajustada */
+    }
+
+    /* Estilo para divisões flexíveis */
+    .flex-row div {
+      flex: 1;
+      margin-right: 1rem; /* Margem direita ajustada */
+    }
+
+    /* Botão de envio */
+    .submit-button {
+      width: 100%;
+      height: 3rem; /* Altura ajustada */
+      cursor: pointer;
+      background: #191919;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      font-size: 1.5rem; /* Tamanho da fonte ajustado */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <a href="../TelaOFC/index.html">
+      <span class="e-sport">E-Sport</span>
+    </a>
+    <div class="form-container">
+      <h1>Dados de Entrega</h1>
+
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" name="cep" placeholder="00000-000" />
+
+      <label for="estado">Estado</label>
+      <select id="estado" name="estado">
+        <option value="AC">AC</option>
+        <option value="AL">AL</option>
+        <option value="AP">AP</option>
+        <option value="AM">AM</option>
+        <option value="BA">BA</option>
+        <option value="CE">CE</option>
+        <option value="DF">DF</option>
+        <option value="ES">ES</option>
+        <option value="GO">GO</option>
+        <option value="MA">MA</option>
+        <option value="MT">MT</option>
+        <option value="MS">MS</option>
+        <option value="MG">MG</option>
+        <option value="PA">PA</option>
+        <option value="PB">PB</option>
+        <option value="PR">PR</option>
+        <option value="PE">PE</option>
+        <option value="PI">PI</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+        <option value="RS">RS</option>
+        <option value="RO">RO</option>
+        <option value="RR">RR</option>
+        <option value="SC">SC</option>
+        <option value="SP">SP</option>
+        <option value="SE">SE</option>
+        <option value="TO">TO</option>
+      </select>
+      
+      
+      
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" name="cidade" placeholder="Informe a cidade" />
+
+      <label for="rua">Rua</label>
+      <input type="text" id="rua" name="rua" placeholder="Informe a rua" />
+
+      <div class="flex-row">
+        <div>
+          <label for="numero">N°</label>
+          <input type="text" id="numero" name="numero" placeholder="Número" />
+        </div>
+        <div>
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento" placeholder="Complemento" />
+        </div>
+      </div>
+
+      <button class="submit-button">Próximo</button>
+    </div>
+  </div>
+</body>
+
+</html>
